@@ -30,7 +30,8 @@ public class TicTacToeMain {
         //check free space
         checkFreeSpace();
 
-        //
+        //start game
+        startGame();
 
     }
 }
