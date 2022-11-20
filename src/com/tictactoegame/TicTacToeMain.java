@@ -1,5 +1,4 @@
 package com.tictactoegame;
-
 import static com.tictactoegame.TicTacToe.*;
 
 public class TicTacToeMain {
@@ -25,6 +24,9 @@ public class TicTacToeMain {
 
         //player move
         playerMove();
+
+        //check free space
+        checkFreeSpace();
 
     }
 }
