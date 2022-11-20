@@ -1,6 +1,7 @@
 package com.tictactoegame;
 
 import static com.tictactoegame.TicTacToe.board;
+import static com.tictactoegame.TicTacToe.chooseOption;
 
 public class TicTacToeMain {
 
@@ -16,5 +17,10 @@ public class TicTacToeMain {
         System.out.println(board[4] + "|" +board[5] + "|" +board[6]);
         System.out.println("-----------");
         System.out.println(board[7] +"|" + board[8] + "|"+board[9]);
+
+        //checking for player choice
+        chooseOption();
+
+
     }
 }
