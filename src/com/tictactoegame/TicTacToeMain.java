@@ -25,8 +25,12 @@ public class TicTacToeMain {
         //player move
         playerMove();
 
+        //tossing between player and computer
+        toss();
         //check free space
         checkFreeSpace();
+
+        //
 
     }
 }

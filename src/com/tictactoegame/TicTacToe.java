@@ -5,6 +5,7 @@ package com.tictactoegame;
 //uc3->As a Player would like to see the board, so I can choose the valid cells to make my move during my turn
 //uc4->Ability for user to make a move to a desired location in the board
 //uc5->Ability to check for the free space before making the desired move
+//uc6->As a User would like to do a toss to check who plays first.
 
 import java.util.Random;
 import java.util.Scanner;
@@ -13,17 +14,49 @@ public class TicTacToe {
     //creating a default constructor
     public TicTacToe() {
         System.out.println("Welcome to Tic Tac Toe Game ");
-        System.out.println("Check free space before making the desired move");
+        System.out.println("Tossing between player and computer");
     }
 
     static char[] board = new char[10];
     static char player, computer;
+    static int toss;
+    static  boolean computerFlag=false,playerFlag=false;
+    static Random random =new Random();
     static Scanner sc = new Scanner(System.in);
 
     public void initialize() {
         for (int i = 0; i < 10; i++) {
             board[i] = ' ';
         }
+    }
+
+    //a toss for playing first
+    public static void  toss(){
+        toss =random.nextInt(2);
+        switch (toss){
+            case 0:
+                System.out.println("Tail.\nComputer starts first");
+                computerMove();
+                computerFlag =true;
+                break;
+            case 1:
+                System.out.println("Head.\nPlayer starts first");
+                playerMove();
+                playerFlag =true;
+                break;
+        }
+        if (computerFlag == true){
+            System.out.println("Now its player turn");
+            System.out.println();
+            playerMove();
+        }else if (playerFlag){
+            System.out.println("Now its computer turn");
+            System.out.println();
+            computerMove();
+        }
+    }
+
+    private static void computerMove() {
     }
 
     //Allow player to choose X or O
