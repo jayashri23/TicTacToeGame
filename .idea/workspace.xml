@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b1f209a-5b9a-4413-ab5e-3788cd2b10d7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tictactoegame/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tictactoegame/TicTacToe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tictactoegame/TicTacToeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tictactoegame/TicTacToeMain.java" afterDir="false" />
     </list>
@@ -85,5 +86,18 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

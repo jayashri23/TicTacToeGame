@@ -3,14 +3,16 @@ package com.tictactoegame;
 //uc1->as a player would like to start fresh by creating a tic tac board
 //uc2->Ability to allow the player to choose a letter X or O
 //uc3->As a Player would like to see the board, so I can choose the valid cells to make my move during my turn
+//uc4->Ability for user to make a move to a desired location in the board
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class TicTacToe {
     //creating a default constructor
     public TicTacToe() {
         System.out.println("Welcome to Tic Tac Toe Game ");
-        System.out.println("Display Board");
+        System.out.println("Player Move ");
     }
     static char[] board = new char[10];
     static char player, computer;
@@ -43,5 +45,18 @@ public class TicTacToe {
         System.out.println(board[4] +" |"+board[5]+"|"+board[6]);
         System.out.println("---------------");
         System.out.println(board[7] +" |"+board[8]+"|"+board[9]);
+    }
+    //make player move
+    public static void playerMove(){
+        System.out.println("Enter the position between (1-9) your move first");
+        int playerLocation =sc.nextInt();
+        if (playerLocation > 0 && playerLocation <10){
+            board[playerLocation] = player;
+            showBoard();
+        }else if (board[playerLocation] != ' '){
+            System.out.println("Position is already choose..enter a valid position");
+            showBoard();
+            playerMove();
+        }
     }
 }

@@ -23,5 +23,8 @@ public class TicTacToeMain {
         //Showing board
         showBoard();
 
+        //player move
+        playerMove();
+
     }
 }
