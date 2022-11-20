@@ -1,7 +1,6 @@
 package com.tictactoegame;
 
-import static com.tictactoegame.TicTacToe.board;
-import static com.tictactoegame.TicTacToe.chooseOption;
+import static com.tictactoegame.TicTacToe.*;
 
 public class TicTacToeMain {
 
@@ -21,6 +20,8 @@ public class TicTacToeMain {
         //checking for player choice
         chooseOption();
 
+        //Showing board
+        showBoard();
 
     }
 }
